@@ -1,6 +1,6 @@
 [submodule "piper_sdk"]
-	path = piper_sdk
+	path = piper/piper_sdk
 	url = https://github.com/agilexrobotics/piper_sdk.git
 [submodule "Piper_sdk_ui"]
-	path = Piper_sdk_ui
+	path = piper/Piper_sdk_ui
 	url = https://github.com/agilexrobotics/Piper_sdk_ui.git

@@ -14,8 +14,8 @@ __pycache__/
 
 # Local runtime data
 data/
-initial_pose/*.json
-!initial_pose/.gitkeep
+piper/initial_pose/*.json
+!piper/initial_pose/.gitkeep
 *.log
 *.tmp
 

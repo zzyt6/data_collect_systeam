@@ -6,8 +6,8 @@
 它通过关节模式控制 Piper，并在同一个 PyQt 窗口中显示两路 OpenCV 相机画面。
 
 cd /home/gx4070/Desktop/arm-datasets-collect
-sudo bash piper_sdk/piper_sdk/can_activate.sh can0 1000000
-python tools/initial_pose_tuner.py --can can0 --camera-wrist 10 --camera-global 4 --connect
+sudo bash piper/piper_sdk/piper_sdk/can_activate.sh can0 1000000
+python piper/tools/initial_pose_tuner.py --can can0 --camera-wrist 10 --camera-global 4 --connect
 
 
 python train.py \

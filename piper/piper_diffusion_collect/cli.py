@@ -13,7 +13,7 @@ from pathlib import Path
 from PyQt5.QtWidgets import QApplication
 
 from .camera import list_cameras
-from .paths import REPO_ROOT
+from .paths import DATA_ROOT
 from .xy_collector_window import DataCollectorWindow
 
 
@@ -52,7 +52,7 @@ def build_arg_parser() -> argparse.ArgumentParser:
     parser.add_argument("--replay-hz", type=float, default=60.0, help="Joint command send frequency during interpolated replay.")
     parser.add_argument("--disable-delay", type=float, default=10.0, help="Seconds to wait before disabling Piper.")
     parser.add_argument("--enable-timeout", type=float, default=5.0)
-    parser.add_argument("--output-dir", type=Path, default=REPO_ROOT / "data" / "piper_xy")
+    parser.add_argument("--output-dir", type=Path, default=DATA_ROOT / "piper_xy")
     parser.add_argument(
         "--initial-pose-json",
         type=Path,

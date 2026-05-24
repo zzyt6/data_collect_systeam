@@ -1,7 +1,7 @@
-"""项目路径辅助工具。
+"""Piper 子项目路径辅助工具。
 
-仓库里包含本地 piper_sdk 源码。这里负责在直接运行脚本时把它加入导入路径，
-这样不需要先做 editable pip install。
+Piper 数采代码位于仓库的 piper/ 子目录中；本地 piper_sdk 也作为子模块放在这里。
+这里负责在直接运行脚本时把 SDK 加入导入路径，同时给采集数据提供仓库级 data/ 目录。
 """
 
 from __future__ import annotations
@@ -11,6 +11,8 @@ from pathlib import Path
 
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
+WORKSPACE_ROOT = REPO_ROOT.parent
+DATA_ROOT = WORKSPACE_ROOT / "data"
 LOCAL_SDK_ROOT = REPO_ROOT / "piper_sdk"
 
 

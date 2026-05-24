@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """Piper XY 遥控、关节角 action 数据采集器的轻量启动入口。
-使用方法：python tools/diffusion_xy_collector.py \
+使用方法：python piper/tools/diffusion_xy_collector.py \
 --can can0 \
 --camera-wrist 10 \
 --camera-global 4 \
---initial-pose-json initial_pose/initial_pose.json \
+--initial-pose-json piper/initial_pose/initial_pose.json \
 --connect \
 --hz 10 \
 --command-hz 30 \
