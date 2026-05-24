@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local IDE/editor
+.vscode/
+.idea/
+*.swp
+*~
+
+# Local runtime data
+data/
+initial_pose/*.json
+!initial_pose/.gitkeep
+*.log
+*.tmp
+
+# Large/generated episode/media files
+*.hdf5
+*.h5
+*.mp4
+*.avi
+*.mov
+*.mkv
+
+# Archives/build artifacts
+*.zip
+*.tar
+*.tar.gz
+*.7z
+dist/
+build/
+
+# OS
+.DS_Store
+Thumbs.db
